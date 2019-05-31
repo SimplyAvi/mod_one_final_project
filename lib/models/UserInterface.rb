@@ -8,29 +8,32 @@ module UserInterface
 | | | | | | | |/ __| |/ /______|  __/ _` | '__| |/ /
 \\ \\/' / |_| | | (__|   <       | | | (_| | |  |   <
  \\_/\\_\\\\__,_|_|\\___|_|\\_\\      \\_|  \\__,_|_|  |_|\\_\\"
+
+
+
 end
 
 
 
     def self.welcome_message
     puts "WELCOME TO QUICK-PARK"
+        puts "\n"
     sleep 0.3
   end
 
   def self.main_menu
     PROMPT.select("What would you like to do?", [
       "Find a Parking Spot",
-      "See Booked Spots",
-      # "Update Zipcode",
-      "Delete Reserved Parking",
+      "See Your Booked Spots",
+      "Delete A Reserved Parking",
       "Exit"
     ])
   end
 
   def self.find_parking_spot_menu
     PROMPT.select("How would you like to search", [
-      "Find parking spot for my zipcode",
-      "Enter a zipcode"
+      "Pick a parking spot for my zipcode",
+      "Enter a zipcode you wish to find a parking spot in"
 
     ])
   end
